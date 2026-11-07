@@ -9,9 +9,15 @@ Turns one client conversation into `INTAKE.md`, `PROPOSAL.md` and a row in `PAIN
 
 **Written-first:** you draft, the user reviews and sends. Client-facing text is in the client's language; everything else is in English.
 
+All files go into `~/www/clients-meta/`. Each time you stop, save them as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
+
 ## 1. Open the client folder
 
-Read [`WORKSPACE.md`](../idea-grill/WORKSPACE.md). Create `clients/<client-slug>/` and append the pasted input to `NOTES.md` verbatim, under a dated heading with its source link.
+Read [`WORKSPACE.md`](../idea-grill/WORKSPACE.md). If `~/www/clients-meta/` does not exist, run `gh repo view stubbornweb/clients-meta`. If the repo does not exist, tell the user that you will make the private repo `stubbornweb/clients-meta`, and wait for a "yes". Then run `gh repo create stubbornweb/clients-meta --private --add-readme`. Clone it with `gh repo clone stubbornweb/clients-meta ~/www/clients-meta`.
+
+Start the branch `client-intake/<client-slug>` as "Saving" in `WORKSPACE.md` says. Add each file of [`CLIENTS-META-FILES-FORMAT.md`](CLIENTS-META-FILES-FORMAT.md) that is missing.
+
+Create `<client-slug>/` and append the pasted input to `NOTES.md` verbatim, under a dated heading with its source link.
 
 If the folder already exists, read `NOTES.md` and resume at the first step whose **Done when** is unmet. A pasted reply usually means step 3.
 
@@ -59,13 +65,13 @@ Otherwise fill [`PROPOSAL-FORMAT.md`](PROPOSAL-FORMAT.md) as `PROPOSAL.md` and s
 
 ## 6. Log the pain
 
-Read [`PAINS-INDEX-FORMAT.md`](PAINS-INDEX-FORMAT.md). Add this client to the matching row of `clients/PAINS-INDEX.md`, or add a new row.
+Read [`PAINS-INDEX-FORMAT.md`](PAINS-INDEX-FORMAT.md). Add this client to the matching row of `PAINS-INDEX.md`, or add a new row.
 
-When a row reaches 3 clients and has no idea yet, create `ideas/<slug>/SIGNALS.md` per [`SIGNALS-FORMAT.md`](SIGNALS-FORMAT.md), with one entry per client, and link it from the row.
+When the row reaches 3 clients, add its signals section, with one entry per client. When the row already has a signals section, add an entry for this client.
 
-**Done when:** the client sits on exactly one row, and every row with 3+ clients links a `SIGNALS.md` holding one entry per client.
+**Done when:** the client sits on exactly one row, and every row with 3+ clients has a signals section with one entry per client.
 
 ## Where it goes next
 
-- A new `SIGNALS.md` → `idea-grill` on that idea.
+- A row that reached 3 clients → `idea-grill` on that pain.
 - Otherwise → stop. The user sends the proposal.

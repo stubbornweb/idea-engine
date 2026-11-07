@@ -8,7 +8,7 @@ The idea survived grilling, and no open assumption could kill it.
 
 Requires: a named first user, a problem stated in that user's words, and a reason this is worth doing rather than the nearest alternative.
 
-Next: `setup-meta-repo`.
+Next: `project-brief`.
 
 ## REFINE
 

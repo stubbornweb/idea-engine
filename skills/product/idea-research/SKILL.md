@@ -11,7 +11,7 @@ The point is ordering. Most research on a new idea is wasted because the cheap c
 
 ## 1. Read the decision record
 
-Read `IDEA-DECISION.md` from the idea workspace ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)).
+In `~/www/<slug>-meta/`, start the branch `idea-research` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says. Read `1-idea/IDEA-DECISION.md`.
 
 If there is no decision record, run `idea-grill` first. Researching an idea nobody has grilled produces answers to questions nobody needed.
 
@@ -38,11 +38,11 @@ Rank: kill-questions, then scope questions (the answer changes what gets built),
 
 ## 4. Write and dispatch
 
-Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) into the workspace as `RESEARCH-QUESTIONS.md`.
+Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) as `1-idea/research/RESEARCH-QUESTIONS.md`.
 
-Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `research/` in the workspace.
+Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `1-idea/research/`.
 
-**Done when:** every kill-question has a findings file. Then append a dated section to `IDEA-DECISION.md` recording what the answers did to the verdict — confirmed it, or changed it.
+**Done when:** every kill-question has a findings file. Then append a dated section to `IDEA-DECISION.md` recording what the answers did to the verdict — confirmed it, or changed it. Save `1-idea/` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
 
 ## Where it goes next
 

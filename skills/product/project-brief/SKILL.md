@@ -11,7 +11,7 @@ A brief earns its keep through what it *excludes*. A description that would fit 
 
 ## 1. Check the input
 
-Run this skill in a meta repo. If the repo has no `PROJECT.md` at its root, stop and tell the user to run `setup-meta-repo` first.
+Run this skill in `~/www/<slug>-meta/`. Start the branch `project-brief` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says. If the repo has no `PROJECT.md` at its root, stop and tell the user to run `setup-meta-repo` first.
 
 Read `1-idea/IDEA-DECISION.md`, plus anything in `1-idea/research/`.
 
@@ -19,7 +19,7 @@ If the verdict is not PROCEED, say so and stop. A brief written over a REFINE la
 
 If the project has no decision record at all (an existing project being documented late), reconstruct one by asking the user the questions in [`VERDICTS.md`](../idea-grill/VERDICTS.md) under PROCEED. That takes minutes and it is the whole foundation.
 
-If `PROJECT.md` has a `**Client:**` line, read `EXAMPLES.md` in that client folder ([`WORKSPACE.md`](../idea-grill/WORKSPACE.md)), if it exists.
+If `PROJECT.md` has a `**Client:**` line, read `~/www/clients-meta/<client-slug>/EXAMPLES.md`, if it exists.
 
 **Done when:** you can state, in one sentence each, the first user and the problem in that user's words.
 
@@ -49,6 +49,6 @@ Then test the whole document: hand it to someone who has never heard the idea, a
 
 ## 5. Place it
 
-Write the brief to `1-idea/PROJECT-DESCRIPTION.md` in the project repo.
+Write the brief to `1-idea/PROJECT-DESCRIPTION.md`. Save it as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
 
-**Done when:** the file is at `1-idea/PROJECT-DESCRIPTION.md`.
+**Done when:** the file is at `1-idea/PROJECT-DESCRIPTION.md`, in an open pull request.
