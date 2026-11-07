@@ -14,5 +14,5 @@ Skills have no unit tests.
 ## Repo rules
 
 - Read `README.md` before you add, move or rename a skill. It holds the layout and the naming rules.
-- The skills write their output to the idea workspace. This repo holds only the skills.
+- The skills write their output to the meta repos and to `clients-meta`, as `skills/product/idea-grill/WORKSPACE.md` says. This repo holds only the skills.
 - `.claude-plugin/plugin.json` has no `version` field, so every merge to `main` is a release. The `stubbornweb/studio` marketplace lists this plugin.

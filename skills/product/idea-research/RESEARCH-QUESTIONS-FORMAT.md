@@ -1,7 +1,7 @@
 # Research questions — <Idea name>
 
 **Date:** YYYY-MM-DD
-**Source:** IDEA-DECISION.md
+**Source:** `1-idea/IDEA-DECISION.md`
 
 ## Kill-questions
 
@@ -11,7 +11,7 @@ A plausible answer here ends the idea. These get answered first, and nothing bel
 
 - **From:** <source type — docs, pricing pages, a competitor's product, a user conversation>
 - **Kills it if:** <the answer that ends the idea>
-- **Answer:** <filled in by research; link to `research/<slug>.md`>
+- **Answer:** <filled in by research; link to `<question-slug>.md`>
 
 ## Scope questions
 
