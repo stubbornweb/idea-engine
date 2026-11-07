@@ -29,7 +29,7 @@ Every skill in this category uses two fixed paths and no environment variables:
 
 Files appear in this order as an idea moves through the chain. A missing file means that stage has not run.
 
-When an idea gets PROCEED, `project-start` moves its folder into `1-idea/` of the project repo. Then `project-brief` writes `1-idea/PROJECT-DESCRIPTION.md` there.
+When an idea gets PROCEED, `setup-meta-repo` writes `PROJECT.md` in its meta repo `~/www/<slug>-meta/`. Then `project-brief` writes `1-idea/PROJECT-DESCRIPTION.md` there.
 
 ## File names
 
@@ -40,7 +40,7 @@ Does the skill know the file's name before it runs?
 
 ## Slugs
 
-A slug uses only `a-z`, `0-9` and single dashes. It starts and ends with a letter or a digit, and it has 40 characters or fewer. An idea slug must not be the name of a studio repo: `studio`, `hub`, `idea-engine`, `design-engine`, `prototype-engine` or `idea-workspace`.
+A slug uses only `a-z`, `0-9` and single dashes. It starts and ends with a letter or a digit, and it has 40 characters or fewer. An idea slug must not be the name of a studio repo (`hub`, `idea-engine`, `design-engine`, `prototype-engine`), must not be `clients`, and must not end in `-meta`. Client slugs are a separate list, so a client slug can be the same as an idea slug.
 
 Reject a slug that breaks this rule, and show the rule. Never change a slug yourself: ask for a new one. A slug never changes after its folder is made.
 

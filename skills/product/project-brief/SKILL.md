@@ -1,6 +1,6 @@
 ---
 name: project-brief
-description: Write 1-idea/PROJECT-DESCRIPTION.md in a project repo - what is being built, for whom, the success targets, the references, and what is explicitly out of scope. Use after project-start has made the project repo, or when an existing project has no brief.
+description: Write 1-idea/PROJECT-DESCRIPTION.md in a meta repo - what is being built, for whom, the success targets, the references, and what is explicitly out of scope. Use after setup-meta-repo has written PROJECT.md, or when an existing project has no brief.
 ---
 
 # Project brief
@@ -11,7 +11,7 @@ A brief earns its keep through what it *excludes*. A description that would fit 
 
 ## 1. Check the input
 
-Run this skill in a project repo. If the repo has no `PROJECT.md` at its root, stop and tell the user to run `project-start` first.
+Run this skill in a meta repo. If the repo has no `PROJECT.md` at its root, stop and tell the user to run `setup-meta-repo` first.
 
 Read `1-idea/IDEA-DECISION.md`, plus anything in `1-idea/research/`.
 
