@@ -42,8 +42,8 @@ Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) as `1-idea/r
 
 Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `1-idea/research/`.
 
-**Done when:** every kill-question has a findings file. Then append a dated section to `IDEA-DECISION.md` recording what the answers did to the verdict — confirmed it, or changed it. Save `1-idea/` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
+**Done when:** every kill-question has a findings file. Then save `1-idea/` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
 
 ## Where it goes next
 
-Re-read [`VERDICTS.md`](../idea-grill/VERDICTS.md) against the findings. The verdict may have moved; a REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.
+When the user has merged the findings, send them to a revision round of `idea-grill`. Only `idea-grill` gives a verdict: the revision round reads the findings and gives the new one. A REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.

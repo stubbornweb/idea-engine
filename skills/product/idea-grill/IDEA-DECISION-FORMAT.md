@@ -39,7 +39,7 @@ Open assumptions carry the question that would settle them:
 
 - **<assumption>** — <the question `idea-research` should ask>
 
-## Verdict
+## First verdict
 
 <Why this verdict and not the adjacent one. For REJECT: the killer, in one sentence. For PARK: the observable trigger that reopens it.>
 
@@ -47,8 +47,18 @@ Open assumptions carry the question that would settle them:
 
 ## Revisions
 
-Append, never overwrite.
+<Empty after the first verdict. Each revision round of `idea-grill` adds one section here, the newest last. The round edits only the `**Verdict:**` and `**Date:**` lines at the top. Everything else in this file only grows.>
 
-### YYYY-MM-DD — after research
+### YYYY-MM-DD — <old verdict> → <new verdict>
 
-<What the findings did to the verdict: confirmed, or changed it and why.>
+**Reason for the round:** <what is new since the last verdict: research findings, a new fact, or the PARK trigger fired>
+
+| Open point | Result | Fact |
+|---|---|---|
+| <filter or assumption that was open> | resolved / still open | <the findings file in `research/`, or the user's answer> |
+
+<Why this verdict and not the adjacent one, with the same rules as "First verdict".>
+
+Open assumptions, new or still open, carry the question that would settle them:
+
+- **<assumption>** — <the question `idea-research` should ask>

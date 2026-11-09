@@ -16,7 +16,7 @@ The idea survived, but something load-bearing is still unresolved — the user, 
 
 Requires: naming what specifically is unresolved. "Needs more thought" is not a REFINE; it is an unfinished grilling.
 
-Next: `idea-research` if the gap is factual, another grilling round if the gap is conceptual.
+Next: `idea-research` and then a revision round of `idea-grill` if the gap is factual. Only a revision round if the gap is conceptual.
 
 ## PARK
 
@@ -24,7 +24,7 @@ The idea is sound but blocked on something outside the decision — time, a depe
 
 Requires: the blocking condition, written as an observable trigger. "When the API ships public write access", not "later".
 
-Next: nothing. The record is the deliverable. It gets revisited when the trigger fires.
+Next: nothing. The record is the deliverable. When the trigger fires, the idea comes back through a revision round of `idea-grill`.
 
 ## REJECT
 
@@ -32,7 +32,7 @@ Grilling found the thing that kills it.
 
 Requires: the specific killer, in one sentence. A REJECT with no stated killer is a PARK wearing the wrong label.
 
-Next: nothing. Write it down anyway — a rejected idea is the cheapest way to avoid rediscovering the same dead end.
+Next: nothing. REJECT is final: `setup-meta-repo` archives the meta repo, and no skill opens it again. Only the owner can reopen the idea: they unarchive the repo by hand and run a revision round. Write it down anyway — a rejected idea is the cheapest way to avoid rediscovering the same dead end.
 
 ## Choosing
 

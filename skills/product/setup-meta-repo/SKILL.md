@@ -1,11 +1,11 @@
 ---
 name: setup-meta-repo
-description: Make or repair the meta repo stubbornweb/<slug>-meta - add the missing files, write PROJECT.md after PROCEED or for an existing product that joins, and archive the repo after REJECT. Use at the start of idea-grill and after its verdict, when an existing product joins the studio, or before a quick experiment.
+description: Make or repair the meta repo stubbornweb/<slug>-meta - add the missing files, make PROJECT.md match the verdict or write it for an existing product that joins, and archive the repo after REJECT. Use at the start of idea-grill and after each verdict, when an existing product joins the studio, or before a quick experiment.
 ---
 
 # Setup meta repo
 
-Checks one meta repo, `stubbornweb/<slug>-meta`, and adds only what is missing. A second run on the same slug changes nothing. The steps follow "Setting up a meta repo" in ADR 0003 of `stubbornweb/studio`.
+Checks one meta repo, `stubbornweb/<slug>-meta`. It adds what is missing, and it removes a `PROJECT.md` that the verdict does not allow. A second run on the same slug changes nothing. The steps follow "Setting up a meta repo" in ADR 0003 of `stubbornweb/studio`.
 
 Ask every question through `AskUserQuestion`. Keep a list of each change you make, for step 7.
 
@@ -44,15 +44,14 @@ Fill [`META-REPO-FILES-FORMAT.md`](META-REPO-FILES-FORMAT.md) for each of `READM
 
 **Done when:** the repo root has all 4 files.
 
-## 5. Write PROJECT.md
+## 5. Match PROJECT.md to the verdict
 
-Skip this step if `PROJECT.md` exists.
-
-- **The verdict is PROCEED:** the stage is `idea`.
+- **The verdict is REFINE or PARK:** if `PROJECT.md` has `**Stage:** idea`, remove it with `git rm PROJECT.md`. Then skip the rest of this step.
+- **`PROJECT.md` exists:** skip this step.
+- **The verdict is PROCEED:** write `PROJECT.md`. The stage is `idea`.
 - **There is no decision record:** if the caller said that this is a new idea or a quick experiment, skip this step. Otherwise ask the user: "Is `<slug>` an existing product that joins the studio?" If the answer is no, skip this step. If it is yes, ask the user:
   - **The stage the project enters at:** `idea`, `design`, `prototype`, `build`, `live` or `closed`.
   - **The code repo:** its full `<owner>/<repo>` name, or none. Check that `gh repo view <owner>/<repo>` finds it.
-- **The verdict is REFINE or PARK:** skip this step.
 
 When you write `PROJECT.md`, also ask the user:
 
@@ -61,7 +60,7 @@ When you write `PROJECT.md`, also ask the user:
 
 Fill `PROJECT.md` from [`META-REPO-FILES-FORMAT.md`](META-REPO-FILES-FORMAT.md). For an existing product that joins at a stage after `idea`, add the entry note to `README.md`.
 
-**Done when:** `PROJECT.md` exists with the stage, client and code repo the user gave, or this step was skipped for one of the reasons above.
+**Done when:** `PROJECT.md` exists with the stage, client and code repo the user gave, or it was removed, or this step was skipped for one of the reasons above.
 
 ## 6. Archive after REJECT
 
@@ -73,7 +72,7 @@ Only for the REJECT verdict. Tell the user that you will archive `stubbornweb/<s
 
 If step 4 or 5 changed files: make the branch `setup-meta-repo` with `git switch -C setup-meta-repo`, commit, run `git push --force -u origin setup-meta-repo`, and open a pull request to the default branch. Step 2 made sure that no open pull request uses this branch. Ask the user to merge it.
 
-Tell the user each change from your list: the repo made, the files added, `PROJECT.md` written, the entry note, the pull request, or the archive. If the list is empty, say: "Nothing was missing. Nothing changed."
+Tell the user each change from your list: the repo made, the files added, `PROJECT.md` written or removed, the entry note, the pull request, or the archive. If the list is empty, say: "Nothing was missing. Nothing changed."
 
 **Done when:** the user knows every change, and every changed file is in an open pull request.
 

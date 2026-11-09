@@ -1,6 +1,6 @@
 ---
 name: idea-grill
-description: Grill a raw idea down to a written verdict - PROCEED, REFINE, PARK or REJECT. Use when the user has a new idea, wants to decide whether something is worth building, or asks for an idea decision record.
+description: Grill a raw idea down to a written verdict - PROCEED, REFINE, PARK or REJECT - or change that verdict in a revision round. Use when the user has a new idea, wants to decide whether something is worth building, asks for an idea decision record, or brings research findings or new facts for an idea that has a verdict.
 ---
 
 # Idea grill
@@ -25,11 +25,13 @@ Run `setup-meta-repo`, and tell it that this is a new idea. It agrees the slug w
 
 In `~/www/<slug>-meta/`, start the branch `idea-grill` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says.
 
+If `1-idea/IDEA-DECISION.md` exists, this run is a **revision round**. In a revision round, if `PROJECT.md` exists and its `**Stage:**` is not `idea`, stop and tell the user: after the stage `idea`, the Idea Engine does not change the verdict.
+
 If `~/www/clients-meta/PAINS-INDEX.md` exists, read it. Show the user each pain that matches the idea, with its clients and its signals. Those are the facts the grilling starts from.
 
-Before asking a single question, write the idea down in the user's own words. One paragraph. Every later step checks itself against this paragraph, so capture what they said, not what you think they meant.
+For a new idea, before asking a single question, write the idea down in the user's own words. One paragraph. Every later step checks itself against this paragraph, so capture what they said, not what you think they meant. In a revision round, the record already has this paragraph: do "Revision round" in place of steps 2 to 4.
 
-**Done when:** `~/www/<slug>-meta/` is on the branch `idea-grill`, the user has seen each matching client pain, and the idea is written down as the user framed it.
+**Done when:** `~/www/<slug>-meta/` is on the branch `idea-grill`, the user has seen each matching client pain, and the idea is written down as the user framed it, or this run is a revision round.
 
 ## 2. Filter it
 
@@ -59,12 +61,39 @@ Fill [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) as `1-idea/IDEA-DECISI
 
 ## 5. Save the verdict
 
-Save `1-idea/` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says. Wait until the user has merged it, and also the pull request that `setup-meta-repo` opened in step 1, if there is one. Then run `setup-meta-repo` again: after PROCEED it writes `PROJECT.md`, and after REJECT it archives the repo.
+Save `1-idea/` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says. Wait until the user has merged it, and also the pull request that `setup-meta-repo` opened in step 1, if there is one. Then run `setup-meta-repo` again: it makes `PROJECT.md` match the verdict, and after REJECT it archives the repo.
 
 **Done when:** the pull requests are merged, and `setup-meta-repo` has reported its changes.
+
+## Revision round
+
+A revision round gives a new verdict to an idea that has a decision record, for example after `idea-research`. The record keeps its history: the round edits only the `**Verdict:**` and `**Date:**` lines, and adds one section under "## Revisions". Everything else in the file stays as it is.
+
+### R1. Find the open points
+
+Read `1-idea/IDEA-DECISION.md` and every findings file in `1-idea/research/`. The **open points** are each filter that reads unknown and each assumption that is still open, in "Filters", "Assumptions" and in every earlier revision.
+
+Ask the user the reason for the new round: research findings, a new fact, or the PARK trigger fired. Show each open point with the findings and facts that bear on it.
+
+**Done when:** the user has given the reason, and has seen each open point with its findings.
+
+### R2. Grill the open points
+
+Invoke `mattpocock-skills:grilling` on the open points and the reason, asking as above. Ask only about these. A point that the record already settled stays settled. Track each new assumption as step 3 says.
+
+**Done when:** each open point is resolved, or still open with the question that would resolve it.
+
+### R3. Write the new verdict
+
+Read [`VERDICTS.md`](VERDICTS.md) and pick the verdict the evidence supports. It can be the same verdict.
+
+In `1-idea/IDEA-DECISION.md`, set the `**Verdict:**` line to the new verdict and the `**Date:**` line to today. Add a section under "## Revisions", as [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) shows. Then do step 5.
+
+**Done when:** the two header lines show the new verdict and today's date, the new section names every open point from R1 and every new assumption from R2, and the rest of the file is unchanged.
 
 ## Where it goes next
 
 - **PROCEED** → `project-brief`
-- **REFINE**, or any load-bearing assumption still open → `idea-research`
-- **PARK** / **REJECT** → stop. The record is the deliverable.
+- **REFINE**, or any load-bearing assumption still open → `idea-research`, then a revision round
+- **PARK** → stop. When the trigger fires, run a revision round.
+- **REJECT** → stop. REJECT is final.
