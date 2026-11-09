@@ -4,7 +4,7 @@ Where artifacts live. Skills are reusable behaviour; these files are project mem
 
 ## Location
 
-Every skill in this category uses two fixed paths and no environment variables. The layout follows ADR 0003 in `stubbornweb/studio`.
+Every skill in this category uses two fixed paths and no environment variables. The layout follows ADR 0003 in `stubbornweb/solo-product-studio`.
 
 - `~/www/<slug>-meta/`, a clone of the private repo `stubbornweb/<slug>-meta`. It is the meta repo of one idea. `setup-meta-repo` makes it.
 - `~/www/clients-meta/`, a clone of the private repo `stubbornweb/clients-meta`. It holds the client folders. `client-intake` makes it.

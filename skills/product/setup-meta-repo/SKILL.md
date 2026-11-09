@@ -5,7 +5,7 @@ description: Make or repair the meta repo stubbornweb/<slug>-meta - add the miss
 
 # Setup meta repo
 
-Checks one meta repo, `stubbornweb/<slug>-meta`. It adds what is missing, and it removes a `PROJECT.md` that the verdict does not allow. A second run on the same slug changes nothing. The steps follow "Setting up a meta repo" in ADR 0003 of `stubbornweb/studio`.
+Checks one meta repo, `stubbornweb/<slug>-meta`. It adds what is missing, and it removes a `PROJECT.md` that the verdict does not allow. A second run on the same slug changes nothing. The steps follow "Setting up a meta repo" in ADR 0003 of `stubbornweb/solo-product-studio`.
 
 Ask every question through `AskUserQuestion`. Keep a list of each change you make, for step 7.
 

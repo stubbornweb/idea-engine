@@ -45,7 +45,7 @@ Not here. Skills are reusable behaviour; idea and project documents are project 
 As a plugin, from the studio marketplace:
 
 ```
-/plugin marketplace add stubbornweb/studio
+/plugin marketplace add stubbornweb/solo-product-studio
 /plugin install idea-engine@studio
 ```
 
