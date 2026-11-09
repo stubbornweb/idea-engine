@@ -1,6 +1,6 @@
 # Meta repo files
 
-The files `setup-meta-repo` writes at the root of a meta repo. The layout and `PROJECT.md` follow ADR 0003, and the agent rules follow ADR 0004, both in `stubbornweb/studio`.
+The files `setup-meta-repo` writes at the root of a meta repo. The layout and `PROJECT.md` follow ADR 0003, and the agent rules follow ADR 0004, both in `stubbornweb/solo-product-studio`.
 
 ## README.md
 

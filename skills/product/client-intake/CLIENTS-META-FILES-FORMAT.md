@@ -1,6 +1,6 @@
 # Clients meta files
 
-The files `client-intake` adds at the root of `clients-meta`. The agent rules follow ADR 0004 in `stubbornweb/studio`.
+The files `client-intake` adds at the root of `clients-meta`. The agent rules follow ADR 0004 in `stubbornweb/solo-product-studio`.
 
 ## AGENTS.md
 
