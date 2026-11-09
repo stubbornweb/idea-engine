@@ -54,4 +54,6 @@ Reject a slug that breaks this rule, and show the rule. Never change a slug your
 
 ## History
 
-Never rewrite a file an earlier stage produced. Append a dated section instead — the history of how a verdict changed is the point of keeping the record.
+Never rewrite a file an earlier stage produced. Add a dated section instead.
+
+`IDEA-DECISION.md` has one exception. Its `**Verdict:**` and `**Date:**` lines show the current verdict and the day it was given, and a revision round of `idea-grill` edits these two lines. The rest of the file only grows, so it keeps the history of how the verdict changed.
