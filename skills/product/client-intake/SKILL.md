@@ -78,4 +78,5 @@ When a row reaches 3 clients, add its signals section, with one entry per client
 ## Where it goes next
 
 - A row that reached 3 clients → `idea-grill` on that pain.
+- The client accepts the diagnosis option → `client-diagnosis`.
 - Otherwise → stop. The user sends the proposal.

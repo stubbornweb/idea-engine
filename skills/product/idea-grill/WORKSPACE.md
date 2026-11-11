@@ -7,7 +7,7 @@ Where artifacts live. Skills are reusable behaviour; these files are project mem
 Every skill in this category uses two fixed paths and no environment variables. The layout follows ADR 0003 in `stubbornweb/solo-product-studio`.
 
 - `~/www/<slug>-meta/`, a clone of the private repo `stubbornweb/<slug>-meta`. It is the meta repo of one idea. `setup-meta-repo` makes it.
-- `~/www/clients-meta/`, a clone of the private repo `stubbornweb/clients-meta`. It holds the client folders. `client-intake` makes it.
+- `~/www/clients-meta/`, a clone of the private repo `stubbornweb/clients-meta`. It holds the client folders. `client-intake` makes it, and `client-diagnosis` writes into it.
 
 ```
 ~/www/<slug>-meta/
@@ -25,6 +25,9 @@ Every skill in this category uses two fixed paths and no environment variables. 
     ├── PROPOSAL.md
     ├── EXAMPLES.md             # example sites the client sent
     ├── work-samples/           # real pieces of the client's work, personal data removed
+    ├── DIAGNOSIS.md            # client-diagnosis
+    ├── transcripts/            # client-diagnosis: calls recorded with consent
+    ├── demos/                  # client-diagnosis: demos of the top 2 items
     └── NOTES.md                # raw evidence, agent notes
 ```
 
@@ -32,7 +35,7 @@ Files appear in this order as an idea moves through the chain. A missing file me
 
 ## Saving
 
-Each skill that writes into a meta repo or into `clients-meta` saves its files through a pull request. The branch is the skill name. In `clients-meta` it is `client-intake/<client-slug>`.
+Each skill that writes into a meta repo or into `clients-meta` saves its files through a pull request. The branch is the skill name. In `clients-meta` it is `<skill-name>/<client-slug>`, for example `client-intake/fitwerk`.
 
 1. **Before you write:** if an open pull request from the branch exists, switch to the branch and pull it. If not, switch to the default branch, pull it, and run `git switch -C <branch>`. If `git status` shows changes, stop and tell the user.
 2. **When the skill stops or is done:** commit the files, run `git push --force -u origin <branch>`, and open a pull request to the default branch if none is open. Ask the user to merge it.
