@@ -21,7 +21,7 @@ Every question to the user, in every step, goes through `AskUserQuestion`, one q
 
 ## 1. Open the meta repo
 
-Run `setup-meta-repo`, and tell it that this is a new idea. It agrees the slug with the user and makes or repairs `~/www/<slug>-meta/`. If it stops, stop too.
+Run `setup-meta-repo`. When the idea has no decision record yet, tell it that this is a new idea. It agrees the slug with the user and makes or repairs `~/www/<slug>-meta/`. If it stops, stop too.
 
 In `~/www/<slug>-meta/`, start the branch `idea-grill` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says.
 
