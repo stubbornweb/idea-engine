@@ -15,8 +15,16 @@ The Risk section answers each anxiety from the intake.
 
 <One line: why B.>
 
+**Care plan:** €<n> a month after launch. <What it covers: upkeep, fixes, small changes per month.>
+
 Reply with A, B or C and a start date that suits you.
 ```
+
+## Care plan
+
+Add the **Care plan** line when the product needs upkeep after launch: a live site, an app or an AI workflow. It is optional for the client, and it is not a fourth option.
+
+_Worth testing. Source: https://github.com/stubbornweb/solo-product-studio/blob/main/docs/sources/2026-11-11-ai-assessment-interview.md_
 
 ## Diagnosis as option A
 
