@@ -1,6 +1,6 @@
 {
   "name": "idea-engine",
-  "description": "The Idea Engine of the studio: turn client posts into questions, proposals and logged pains, grill an idea to a verdict, research what could kill it, set up the meta repo, then define the project.",
+  "description": "The Idea Engine of the studio: turn client posts into questions, proposals and logged pains, run a paid client diagnosis, grill an idea to a verdict, research what could kill it, set up the meta repo, then define the project.",
   "author": {
     "name": "Yevhenii Volosiuk"
   },
@@ -10,6 +10,7 @@
     "skills",
     "product",
     "client-intake",
+    "client-diagnosis",
     "discovery",
     "idea-validation",
     "setup-meta-repo",
@@ -17,6 +18,7 @@
   ],
   "skills": [
     "./skills/product/client-intake",
+    "./skills/product/client-diagnosis",
     "./skills/product/idea-grill",
     "./skills/product/idea-research",
     "./skills/product/setup-meta-repo",
