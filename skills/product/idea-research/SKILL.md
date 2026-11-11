@@ -40,7 +40,7 @@ Rank: kill-questions, then scope questions (the answer changes what gets built),
 
 Fill [`RESEARCH-QUESTIONS-FORMAT.md`](RESEARCH-QUESTIONS-FORMAT.md) as `1-idea/research/RESEARCH-QUESTIONS.md`.
 
-Invoke `mattpocock-skills:research` on the kill-questions, one dispatch per question, writing findings into `1-idea/research/`.
+For each kill-question, call `mattpocock-skills:research` yourself, once per question. That skill starts the background agent, so do not start an agent to call it. Give each call the question, its "Kills it if" line, and the findings file `1-idea/research/<question-slug>.md`.
 
 **Done when:** every kill-question has a findings file. Then save `1-idea/` as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
 
