@@ -24,6 +24,7 @@ Every skill in this category uses two fixed paths and no environment variables. 
     ├── INTAKE.md
     ├── PROPOSAL.md
     ├── EXAMPLES.md             # example sites the client sent
+    ├── work-samples/           # real pieces of the client's work, personal data removed
     └── NOTES.md                # raw evidence, agent notes
 ```
 

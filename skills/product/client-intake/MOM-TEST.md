@@ -21,7 +21,8 @@ Passes only if all are true:
 - **Workaround.** What they do about it today, and what they already tried.
 - **Cost.** What it costs today: hours, money, lost customers. Ask for a number.
 - **Trigger.** What happened that made them post now. See [`DEMAND-SIDE-SALES.md`](DEMAND-SIDE-SALES.md).
-- **Commitment.** One small ask that costs them a little effort: a screenshot of the spreadsheet, last month's figure, access to the current site. Someone who won't spend five minutes won't spend money.
+- **Commitment.** One small ask that costs them a little effort: 2–3 **work samples**, such as last month's order, the form they fill in, the spreadsheet, or access to the current site. Ask them to remove their customers' personal data first. Someone who won't spend five minutes won't spend money.
+  _Worth testing. Source: https://github.com/stubbornweb/solo-product-studio/blob/main/docs/sources/2026-11-11-ai-assessment-interview.md_
 
 ## Reading the reply
 
