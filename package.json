@@ -1,0 +1,19 @@
+{
+  "name": "idea-engine",
+  "private": true,
+  "description": "The Idea Engine plugin of the studio, and the script that checks its skills.",
+  "type": "module",
+  "scripts": {
+    "check": "vp check",
+    "test": "vp test",
+    "check-skills": "node scripts/check-skills.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite-plus": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=26"
+  }
+}
