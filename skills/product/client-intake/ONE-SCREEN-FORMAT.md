@@ -22,6 +22,7 @@ Every file a human reads: `INTAKE.md`, `PROPOSAL.md`, signal summaries. Three se
 ## Evidence
 
 - **Today:** <numbers>   **After:** <numbers> (<who said it, or where it came from>)
+- **Money:** <count> × <time saved> × <hourly cost> = €<low>–€<high> a year
 
 ## Risk
 
@@ -41,6 +42,15 @@ Their day drawn as a code diff. It carries the document; the prose around it sup
 ## Evidence
 
 Only facts the client stated, per [`MOM-TEST.md`](MOM-TEST.md). Each number says where it came from. A number nobody gave is written **unknown**.
+
+The **Money** line shows the math, not only the result:
+
+- Saved time: `count × time saved × hourly cost`, for example `1,800 proposals × 57 min × €30/h`.
+- More sales: `extra jobs × margin`, for example `180 jobs × €1,150`.
+- Each factor is a fact from `NOTES.md`. When one factor is **unknown**, the whole line is **unknown**.
+- **Low** uses the low end of each range the client gave. **High** uses the high end.
+
+_Worth testing. Source: https://github.com/stubbornweb/solo-product-studio/blob/main/docs/sources/2026-11-11-ai-assessment-interview.md_
 
 ## Risk
 
