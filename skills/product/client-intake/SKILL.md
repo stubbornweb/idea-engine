@@ -1,11 +1,11 @@
 ---
 name: client-intake
-description: Client intake - turn a pasted job post or client message into Mom Test questions, and the client's reply into an intake, a proposal and a logged pain. Use when the user pastes a job post (Upwork, Useme) or a client's message or reply.
+description: Client intake - turn a pasted job post or client message into Mom Test questions, and the client's reply into an intake, a proposal and logged pains. Use when the user pastes a job post (Upwork, Useme) or a client's message or reply.
 ---
 
 # Client intake
 
-Turns one client conversation into `INTAKE.md`, `PROPOSAL.md` and a row in `PAINS-INDEX.md`. When the same pain shows up at three clients, it becomes an idea.
+Turns one client conversation into `INTAKE.md`, `PROPOSAL.md` and rows in `PAINS-INDEX.md`. When the same pain shows up at three clients, it becomes an idea.
 
 **Written-first:** you draft, the user reviews and sends. Client-facing text is in the client's language; everything else is in English.
 
@@ -66,13 +66,14 @@ Otherwise fill [`PROPOSAL-FORMAT.md`](PROPOSAL-FORMAT.md) as `PROPOSAL.md` and s
 
 **Done when:** every check in `WIN-WITHOUT-PITCHING.md` passes, and the user would send it as written. When they rewrite it, the rewrite points at the rule that failed: fix the proposal and name that rule to the user.
 
-## 6. Log the pain
+## 6. Log the pains
 
-Read [`PAINS-INDEX-FORMAT.md`](PAINS-INDEX-FORMAT.md). Add this client to the matching row of `PAINS-INDEX.md`, or add a new row.
+Read [`PAINS-INDEX-FORMAT.md`](PAINS-INDEX-FORMAT.md). List every distinct struggling moment in `NOTES.md`, not only the pain in `INTAKE.md`. For each one, add this client to the matching row of `PAINS-INDEX.md`, or add a new row.
+_Worth testing. Source: https://github.com/stubbornweb/solo-product-studio/blob/main/docs/sources/2026-11-11-ai-assessment-interview.md_
 
-When the row reaches 3 clients, add its signals section, with one entry per client. When the row already has a signals section, add an entry for this client.
+When a row reaches 3 clients, add its signals section, with one entry per client. When the row already has a signals section, add an entry for this client.
 
-**Done when:** the client sits on exactly one row, and every row with 3+ clients has a signals section with one entry per client.
+**Done when:** each struggling moment in `NOTES.md` puts the client on exactly one row, and every row with 3+ clients has a signals section with one entry per client.
 
 ## Where it goes next
 
