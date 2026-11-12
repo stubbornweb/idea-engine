@@ -38,7 +38,6 @@ Not here. Skills are reusable behaviour; idea and project documents are project 
 
 ## Deliberately absent
 
-- **`registry.yaml`** — [`web-developmet-registry`](https://github.com/YevheniiVolosiuk/web-developmet-registry) holds the catalog. A second copy here would be a stale duplicate.
 - **`workflows/*.yaml`** — nothing executes YAML steps. Sequencing lives in each skill's closing section, which an agent actually reads.
 - **`category:` frontmatter** — Claude Code reads `name`, `description`, `allowed-tools`. The folder carries the category.
 
