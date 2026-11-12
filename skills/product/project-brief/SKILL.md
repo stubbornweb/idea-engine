@@ -51,4 +51,4 @@ Then test the whole document: hand it to someone who has never heard the idea, a
 
 Write the brief to `1-idea/PROJECT-DESCRIPTION.md`. Save it as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says.
 
-**Done when:** the file is at `1-idea/PROJECT-DESCRIPTION.md`, in an open pull request.
+**Done when:** the file is at `1-idea/PROJECT-DESCRIPTION.md`, saved as `WORKSPACE.md` says.

@@ -11,10 +11,9 @@ This repository holds the client folders of the studio and `PAINS-INDEX.md`.
 
 ## Shared rules
 
-1. Work on a branch and open a pull request. Never push to `main`.
-2. Write a failing test first for any code with logic.
-3. This repo has no check. Read the full diff before you open a pull request.
-4. Write all text in plain English (Simplified Technical English style, CEFR B1).
+1. Write a failing test first for any code with logic.
+2. This repo has no check. Read the full diff before you open a pull request.
+3. Write all text in plain English (Simplified Technical English style, CEFR B1).
 
 ## Repo rules
 

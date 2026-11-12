@@ -19,7 +19,7 @@ Agree the slug with the user. Check it against the slug rule in [`WORKSPACE.md`]
 
 Run `gh repo view stubbornweb/<slug>-meta --json isArchived,visibility`.
 
-- **The repo does not exist:** tell the user that you will make the private repo `stubbornweb/<slug>-meta`, and wait for a "yes". Then run `gh repo create stubbornweb/<slug>-meta --private --add-readme`. The first README commit gives the repo a `main` branch, so all other changes can go through a pull request.
+- **The repo does not exist:** tell the user that you will make the private repo `stubbornweb/<slug>-meta`, and wait for a "yes". Then run `gh repo create stubbornweb/<slug>-meta --private --add-readme`. The first README commit gives the repo a `main` branch.
 - **The repo is archived:** a REJECT verdict archived it. Say so and stop. Change nothing.
 - **The repo is public:** stop and tell the user: a meta repo is private.
 
@@ -70,11 +70,11 @@ Only for the REJECT verdict. Tell the user that you will archive `stubbornweb/<s
 
 ## 7. Report
 
-If step 4 or 5 changed files: make the branch `setup-meta-repo` with `git switch -C setup-meta-repo`, commit, run `git push --force -u origin setup-meta-repo`, and open a pull request to the default branch. Step 2 made sure that no open pull request uses this branch. Ask the user to merge it.
+If step 4 or 5 changed files, save them as "Saving" in [`WORKSPACE.md`](../idea-grill/WORKSPACE.md) says. Step 2 made sure that no open pull request uses the branch `setup-meta-repo`.
 
-Tell the user each change from your list: the repo made, the files added, `PROJECT.md` written or removed, the entry note, the pull request, or the archive. If the list is empty, say: "Nothing was missing. Nothing changed."
+Tell the user each change from your list: the repo made, the files added, `PROJECT.md` written or removed, the entry note, the commit or the pull request, or the archive. If the list is empty, say: "Nothing was missing. Nothing changed."
 
-**Done when:** the user knows every change, and every changed file is in an open pull request.
+**Done when:** the user knows every change, and every changed file is saved as `WORKSPACE.md` says.
 
 ## Where it goes next
 
