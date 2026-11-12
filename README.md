@@ -7,6 +7,8 @@ The Idea Engine of the studio: agent skills, shipped as a Claude Code plugin.
 ```
 .claude-plugin/
   plugin.json        every skill path, listed explicitly
+scripts/
+  check-skills.ts    checks the skills: links, Done-when lines, label lines, plugin.json and README rows
 skills/
   <category>/
     README.md        what the category is for

@@ -1,12 +1,12 @@
 # Idea Engine — agent rules
 
-This repository is the Idea Engine plugin of the studio. It holds Markdown skills only, no code.
+This repository is the Idea Engine plugin of the studio. It holds the Markdown skills and `scripts/check-skills.ts`, which checks their structure.
 
 ## Shared rules
 
 1. Work on a branch and open a pull request. Never push to `main`.
 2. Write a failing test first for any code with logic.
-3. Run `claude plugin validate .` before you open a pull request.
+3. Run `npm run check`, `npm test`, `npm run check-skills` and `claude plugin validate .` before you open a pull request.
 4. Write all text in plain English (Simplified Technical English style, CEFR B1).
 
 Skills have no unit tests.
