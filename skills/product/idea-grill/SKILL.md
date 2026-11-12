@@ -61,9 +61,9 @@ Fill [`IDEA-DECISION-FORMAT.md`](IDEA-DECISION-FORMAT.md) as `1-idea/IDEA-DECISI
 
 ## 5. Save the verdict
 
-Save `1-idea/` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says. Wait until the user has merged it, and also the pull request that `setup-meta-repo` opened in step 1, if there is one. Then run `setup-meta-repo` again: it makes `PROJECT.md` match the verdict, and after REJECT it archives the repo.
+Save `1-idea/` as "Saving" in [`WORKSPACE.md`](WORKSPACE.md) says. If it went through a pull request, wait until the user has merged it, and also the pull request that `setup-meta-repo` opened in step 1, if there is one. Then run `setup-meta-repo` again: it makes `PROJECT.md` match the verdict, and after REJECT it archives the repo.
 
-**Done when:** the pull requests are merged, and `setup-meta-repo` has reported its changes.
+**Done when:** `1-idea/` is on the default branch, and `setup-meta-repo` has reported its changes.
 
 ## Revision round
 

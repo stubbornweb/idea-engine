@@ -35,7 +35,14 @@ Files appear in this order as an idea moves through the chain. A missing file me
 
 ## Saving
 
-Each skill that writes into a meta repo or into `clients-meta` saves its files through a pull request. The branch is the skill name. In `clients-meta` it is `<skill-name>/<client-slug>`, for example `client-intake/fitwerk`.
+Each skill that writes into a meta repo or into `clients-meta` saves its files in one of two ways. The "Data and code" rules in `home/AGENTS.md` decide which.
+
+**Straight to `main`:**
+
+1. **Before you write:** switch to the default branch and pull it. If `git status` shows changes, stop and tell the user.
+2. **When the skill stops or is done:** commit the files and push.
+
+**Through a pull request:** the branch is the skill name. In `clients-meta` it is `<skill-name>/<client-slug>`, for example `client-intake/fitwerk`.
 
 1. **Before you write:** if an open pull request from the branch exists, switch to the branch and pull it. If not, switch to the default branch, pull it, and run `git switch -C <branch>`. If `git status` shows changes, stop and tell the user.
 2. **When the skill stops or is done:** commit the files, run `git push --force -u origin <branch>`, and open a pull request to the default branch if none is open. Ask the user to merge it.

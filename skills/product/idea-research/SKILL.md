@@ -46,4 +46,4 @@ For each kill-question, call `mattpocock-skills:research` yourself, once per que
 
 ## Where it goes next
 
-When the user has merged the findings, send them to a revision round of `idea-grill`. Only `idea-grill` gives a verdict: the revision round reads the findings and gives the new one. A REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.
+When the findings are on the default branch, send them to a revision round of `idea-grill`. Only `idea-grill` gives a verdict: the revision round reads the findings and gives the new one. A REFINE that researched well becomes a PROCEED or a REJECT, and either is progress.
