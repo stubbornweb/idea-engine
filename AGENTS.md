@@ -15,3 +15,4 @@ Skills have no unit tests.
 - Read `README.md` before you add, move or rename a skill. It holds the layout and the naming rules.
 - The skills write their output to the meta repos and to `clients-meta`, as `skills/product/idea-grill/WORKSPACE.md` says. This repo holds only the skills.
 - `.claude-plugin/plugin.json` has no `version` field, so every merge to `main` is a release. The `stubbornweb/solo-product-studio` marketplace lists this plugin.
+- A change that adds, renames or removes a skill, or changes its place in the flow, also needs a pull request in `stubbornweb/solo-product-studio` that updates `skills/ask-studio/SKILL.md`, the router over the skills of every engine (ADR 0008 there).
